@@ -1,0 +1,67 @@
+:host {
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    display: block;
+    background-color:white;
+}
+
+
+
+.logo {
+    width: 30%;
+    height: 150px;
+    object-fit: contain;
+    margin-left: -172px;
+    margin-top: -73px;
+}
+.logo2 {
+    width: 30%;
+    height: 150px;
+    object-fit: contain;
+    margin-left: -306px;
+    margin-bottom: -73px;
+}
+
+
+
+
+
+.login-form {
+    margin-top: 30px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+    font-size:28px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.descreption{
+    font-size: 28px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.email-ctrl-group, .password-ctrl-group {
+    margin-bottom: 1.5rem;
+}
+
+
+.email-ctrl-group img, .password-ctrl-group img {
+    top: 75%;
+    right:10px;
+    font-size: .88rem;
+    position: absolute;
+    transform: translateY(-50%);
+}
+div.doutterline{
+    border-style: dotted;
+}
+
+
+
+

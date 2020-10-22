@@ -1,0 +1,72 @@
+<div class="container login-container">
+    <div class="row">
+        <!-- Banner Section -->
+        <section class="col-12 col-md-8 h-100 d-none d-md-flex flex-column align-items-center">
+            <header class="w-100 pt-4">
+                <img class="logo" src="../../../../assets/blob-shape (2)@2x.png" alt="Logo">
+            </header>
+            <div class="w-100">
+                <img style="width:40%;" src="../../../../assets/Group 5076@2x.png" alt="">
+                <p class="descreption">
+                    <span style="color: green;"> Your data </span> will be secureiy stored in our cloud and will be accesses only by you  </p>
+            </div>
+            <div>
+                <footer>
+                    <img class="logo2" src="../../../../assets/blob-shape (2)@2x.png" alt="Logo">
+                </footer>
+            </div>
+        </section>
+
+
+
+
+        <!-- Form: Login -->
+        <section
+            class="col-12 col-md-4 align-items-center d-flex flex-column justify-content-center position-relative h-100">
+            <form [formGroup]="loginForm" (ngSubmit)="handleSubmit()" class=" login-form">
+                <p class="pb-2 pt-4 title" >
+                     MY<span style="color: green;">COMPANY</span>
+                </p>
+
+                <!-- Email -->
+                <div class="form-group email-ctrl-group position-relative">
+                    <label>Email</label>
+                    <input type="email" formControlName="email" class="form-control login-input-ctrl" id="email-ctrl"
+                        aria-describedby="email"  required>
+                </div>
+
+                <!-- Password -->
+                <div class="form-group password-ctrl-group position-relative">
+                    <label>Password</label>
+                    <input type="password" formControlName="password" class="form-control login-input-ctrl"
+                         id="password-ctrl" required>
+                    <img style="width: 5%;" src="../../../../assets/password.png" alt="Lock Icon" >
+                </div>
+
+                <!-- Forgot password / Remember Password-->
+                <div class="row mb-3">
+                    <div class="col">
+                       <p> By signing up for cources prep, you agree to our <span style="color:blue;"> Tems of use</span>and <span style="color: blue;"> privacy policy</span></p>
+
+                    </div>
+                </div>
+
+                <button type="submit" style="background-color: rgb(48, 175, 48);" [disabled]="loginForm.invalid" class="btn btn-lg btn-block  w-100">sign up
+                    </button>
+            </form>
+            <!-- sign up with  -->
+            <h4 style="text-align: center; margin-top: 10px;">sign up with</h4>
+            <div class="row justify-content-center p-3">
+                <div class="col-md-4">
+                    <img style="width: 40px;" src="../../../../assets/Group 5107@2x.png" alt="">
+                </div> 
+                <div class="col-md-4">
+                    <img style="width: 40px;" src="../../../../assets/Group 5108@2x.png" alt="">
+                </div>
+            </div>
+            <div>
+                <span>Alredey have an Account ? <a routerLink="/login" style="color: green; text-decoration: none;"> login</a></span>
+            </div>
+        </section>
+    </div>
+</div>
